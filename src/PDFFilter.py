@@ -9,8 +9,9 @@ class PDFFilter:
         self.__type_filtered = [[' Depot', 'Last name', 'First name']]
 
     def read_file(self, loc):
+
         ## Read Lines of the file
-        with open(loc) as f:
+        with open(loc, encoding='latin-1') as f:
             lines = f.readlines()
 
         return lines
